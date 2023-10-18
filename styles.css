@@ -43,7 +43,7 @@ body {
 }
 .logo{
   display: flex;
-  width: 218px;
+  width: 150px;
   height: 24px;
   cursor: pointer;
 }
@@ -238,6 +238,12 @@ border-radius: 2px;
   width: 100vw;
   height: 105px;
   background-color: #25265E;
+
+  display: flex;
+  align-items: center;
+  padding-left: 94px;
+  color: white;
+  font-size: 18px;
 }
 
 
