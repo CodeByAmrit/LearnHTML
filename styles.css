@@ -30,7 +30,9 @@ body {
   display: flex;
 
 }
-
+.menuright a{
+  text-decoration: none;
+}
 .menuright{
   margin-right: 94px;
   width:fit-content;
