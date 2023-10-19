@@ -6,13 +6,14 @@
     <title>LearnHTML</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="pic/logo1.ico">
+    
 </head>
 <body>
     <div class="menuDiv">
         <div class="menuleft">
             <div class="logo"><img src="pic/Logo.png" alt="pic"></div>
-            <div class="menuItems">
-                <p>Tutorials</p>
+            <div class="menuItems" onclick="popFunction()">
+                <p id="item1">Tutorials</p>
                 <img src="pic/arrow.png" alt="arrow">
             </div>
         </div>
@@ -45,10 +46,10 @@
                 <p>Using HTML, we can define web page elements such as paragraphs, headings, links, and images. Our HTML tutorials will teach you everything you need to know about HTML5 (modern HTML) step-by-step.</p>
 
             </div>
-            <div class="startBtn">Start Learning</div>
+            <a href="html.html" style="text-decoration: none;"><div class="startBtn">Start Learning</div></a>
         </div>
         <div class="blueright">
-            <img src="/pic/pic1.png" alt="blueright">
+            <img src="pic/pic1.png" alt="blueright">
         </div>
     </div>
     <div class="white">
@@ -70,6 +71,7 @@
                 <li>With HTML, you can better optimize your website's SEO and improve your marketing.</li>
                 <li>HTML is easy to learn and use, making it a perfect choice for beginners.</li>
                 <li>If you're looking for career opportunities, HTML can open doors in web development, web design, front-end development, and user experience design.</li>
+               
             </UL>
         </div>
 
@@ -77,5 +79,59 @@
     <div class="last">
         © All rights reserved.
     </div>
+
+    <!-- POP UP menu with black and transparent background -->
+
+    <div class="popMenu" id="pop" >
+        <div class="popWin" id="pop1" style="position: relative;">
+            <div class="popLeftTitle">
+                
+                <a href="#">
+                    <div class="select1">
+                        HTML
+                    </div>
+                </a>
+            </div>
+            <div class="popRightTitle">
+                <p>Popular Topics</p>
+                <ul>
+                    <a href="#"><li>HTML Basic</li></a>
+                    <a href="#"><li>HTML Table</li></a>
+                    <a href="#"><li>HTML List</li></a>
+                    <a href="#"><li>HTML Line Break</li></a>
+                    <a href="#"><li>HTML div tag</li></a>
+                </ul>
+                <a href="#">
+                    <div class="allBtn">
+                        All HTML Tutorials ->
+                    </div>
+                </a>
+                <img src="pic/close.png" onclick="closeFuntion()" alt="Close" width="20px" height="20px" style="cursor:pointer; position: absolute; top:20px; right:20px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeFuntion(){
+            document.getElementById("pop").style.display = "none";
+            document.getElementById("pop1").style.top = "-500px";
+        }
+        function popFunction(){
+            if (document.getElementById("pop").style.display === "flex"){
+
+                document.getElementById("pop").style.display = "none";
+                document.getElementById("pop1").style.top = "-500px";
+                document.getElementById("item1").style.color = "black";
+                
+            }
+            else{
+                document.getElementById("pop").style.display = "flex";
+                document.getElementById("pop1").style.top = "0px";
+                document.getElementById("item1").style.color = "#0057FF";
+            }
+        }
+    </script>
+
+    
 </body>
 </html>

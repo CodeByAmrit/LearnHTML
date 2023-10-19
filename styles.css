@@ -13,7 +13,7 @@ body {
 
 .menuDiv {
   position:fixed;
-  z-index: 10;
+  z-index: 1000000;
   top: 0;
   width: 100%;
   height: 70px;
@@ -82,25 +82,6 @@ body {
   background-color: #dce6fd;
 }
 
-.startBtn{
-width: 218px;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-background: linear-gradient(90deg, #FE339C 0%, #B134E9 50.17%, #1D26FF 100%);
-border: none;
-border-radius: 5px;
-color: white;
-font-size: 22px;
-
-}
-.startBtn:hover{
-
-  background: linear-gradient(90deg, #ff9ace 0%, #c76cf1 50.17%, #757aff 100%);
-}
-
 .signupBtn {
   cursor: pointer;
   width: 218px;
@@ -121,19 +102,40 @@ font-size: 22px;
 .signupBtn:hover {
   background-color: rgb(0, 56, 187);
 }
+.startBtn{
+z-index: 400;
+width: 218px;
+height: 50px;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background: linear-gradient(90deg, #FE339C 0%, #B134E9 50.17%, #1D26FF 100%);
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 22px;
+
+}
+.startBtn:hover{
+
+  background: linear-gradient(90deg, #ff9ace 0%, #c76cf1 50.17%, #757aff 100%);
+}
+
 
 
 .blue{
   background-color: #E5F1FB;
   margin-top: 70px;
   width: 100vw;
-  height: 800px;
+  height: fit-content;
   display: flex;
 }
 
 .blueleft{
   width: 50%;
-  height: 800px;
+  height: fit-content;
   /* border: solid; */
   margin-left: 94px;
   margin-top: 30px;
@@ -191,7 +193,7 @@ border-radius: 2px;
 .blueright{
   scale: 1.2;
   width: 50%;
-  height: 800px;
+  height: fit-content;
   /* border: solid; */
   margin-right: 94px;
   display: flex;
@@ -202,7 +204,7 @@ border-radius: 2px;
 
 .right{
   width: 50%;
-  height: 800px;
+  /* height: 800px; */
  
   margin-top: 94px;
   margin-right: 94px;
@@ -227,12 +229,14 @@ border-radius: 2px;
 .blueright img{
   
   width: 600px;
+  margin-top: 100px;
   
  
 }
 
 .white{
   display: flex;
+  height: fit-content;
 }
 .last{
   width: 100vw;
@@ -246,60 +250,116 @@ border-radius: 2px;
   font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.login-container {
-  width: 300px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.popMenu{
+  
+  position: fixed;
+  top: 70px;
+  z-index: 12000;
+  width: 100vw;
+  height:100%;  
+  background-color: rgba(232, 229, 229, 0.383);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  display: none;
+  transition: all .2s ease-in;
 }
 
-h1 {
-  text-align: center;
+.popWin{
+  width: 1000px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  position: absolute;
+  top: -500px;
+  transition: all .8s ease-in;
+ 
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+.popLeftTitle{
+  
+  width: 270px;
+  height: inherit;
+  
 }
 
-input {
+.popLeftTitle ul{
+  height: 70px;
+  
+}
+.popLeftTitle ul, .popLeftTitle a{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.popRightTitle p:nth-child(1){
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+.popRightTitle{
+  border-radius: 8px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  background-color: #FBFBFB;
+  padding-left: 30px;
+  line-height: 40px;
+  color: rgba(37,38,94,.7);
+  font-size: 18px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.popRightTitle a{
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+.popRightTitle a:hover{
+  color:black;
+}
+.allBtn{
   cursor: pointer;
+  height: 60px;
+  width: 266px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #0057FF;
+}
+.allBtn:hover{
+  color: #25265E;
 }
 
-button:hover {
-  background-color: #45a049;
+.select1{
+  cursor: pointer;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 22px;
+  width: 193px;
+  height: 60px;
+  background-color: #CDDDFD;
+  color: #0057FF;
+  padding-right: 20px;
+  border-right: 5px solid;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
