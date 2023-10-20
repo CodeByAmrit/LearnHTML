@@ -311,3 +311,30 @@ code {
 .showCode img:hover{
   background-color: #0c0e14;
 }
+
+@media only screen and (max-width: 800px) {
+  .left1{
+    display: none;
+  }
+  .right1{
+    margin-left: 40px;
+    width: 100vw;
+  }
+  .serachDiv{
+    display: none;
+  }
+  .showCode{
+    width:80vw;
+  }
+  .menuDiv{
+    margin: 0;
+    padding: 0;
+  }
+  .menuleft{
+    padding: 0;
+    margin-left: 40px;
+  }
+  .menuright{
+    display: none;
+  }
+}
