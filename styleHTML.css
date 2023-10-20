@@ -195,13 +195,7 @@ body {
 }
 
 
-.showCode{
-  width: 660px;
-  height: 410px;
-  background-color: #383b40;
-  color: white;
-  border-radius: 4px;
-}
+
 
 .nextBtn{
   cursor: pointer;
@@ -246,4 +240,45 @@ body {
   color: white;
   font-size: 18px;
   margin-left: -500px;
+}
+
+
+.showCode{
+  width: 660px;
+  min-height: 100px;
+  height: fit-content;
+  padding: 20px;
+  background: #181f30;
+  color: #e8e8e8;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+ 
+}
+
+
+code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  padding: 10px;
+  margin-bottom: 30px;
+
+}
+
+.showCode img{
+  margin-top: -20px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border:none;
+  background-color: #1c2130;
+  padding: 5px;
+  border-radius: 25%;
+ 
+}
+.showCode img:hover{
+  background-color: #0c0e14;
 }
