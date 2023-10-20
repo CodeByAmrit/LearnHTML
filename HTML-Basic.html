@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHTML</title>
+
+    <link rel="icon" type="image/x-icon" href="pic/logo1.ico" />
+    <link rel="stylesheet" href="styleHTML.css" />
+  </head>
+  <body>
+    <div class="menuDiv">
+      <div class="menuleft">
+        <a href="index.html"><div class="logo"><img src="pic/Logo.png" alt="pic" /></div></a>
+        
+      </div>
+      <div class="menuright" style="text-decoration: none;">
+        <a href="login.html"><div class="loginBtn">Login</div></a>
+            <a href="signup.html"><div class="signupBtn">Join For Free</div></a>
+      </div>
+    </div>
+    <div class="content">
+        <div class="left1">
+            <div class="heading">Page Index</div>
+            <a href="What-is-html.html"><div class="group "><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">What is HTML?</div></a>
+            <a href="HTML-Basic.html"><div class="group active"><img src="pic/blueCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Basic</div></a>
+            <a href="Web-Design.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">Web Design</div></a>
+            <a href="HTML-Paragraphs.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Paragraphs</div></a>
+            <a href="HTML-Headings.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Headings</div></a>
+            <a href="HTML-Comments.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Comments</div></a>
+            <a href="HTML-Table.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Table</div></a>
+            <a href="HTML-List.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML List</div></a>
+            <a href="HTML-Unordered.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Unordered</div></a>
+            <a href="HTML-Description.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Description</div></a>
+            <a href="HTML-Line.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Line</div></a>
+            <a href="HTML-Pre.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Pre</div></a>
+            <a href="HTML-Horizonal.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Horizonal</div></a>
+        </div>
+        <div class="right1">
+            
+            <h1>HTML Basics</h1>      
+            <p>HTML (HyperText Markup Language) is a markup language used to structure and organize the content on a web page. It uses various tags to define the different elements on a page, such as headings, paragraphs, and links.
+
+            </p>              
+            <hr>
+            
+            <h2>HTML Hierarchy</h2>      
+            <p>HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page.</p>                
+            <div class="showCode">
+
+            </div>
+            <h2><strong>Browser Output</strong></h2>
+            <div class="showCode"></div>
+            <p>In this example, the html element is the root element of the hierarchy and contains two child elements: head and body. The head element, in turn, contains a child element called the title, and the body element contains child elements: h1 and p.</p>
+            <p>Let's see the meaning of the various elements used in the above example.</p>
+            <li>&lt;html&gt;: the root element of the DOM, and it contains all of the other elements in the code</li>
+            <li>&lt;head&gt;: contains metadata about the web page, such as the title and any linked CSS or JavaScript files</li>
+            <li>&lt;title&gt;: contains the title of the web page, which will be displayed in the web browser's title bar or tab</li>
+            <li>&lt;body&gt;: contains the main content of the web page, which will be displayed in the web browser's window</li>
+            <li>&lt;p&gt;: contains the paragraphs of text on the web page</li>
+            <li>&lt;strong&gt;, &lt;em&gt;: child elements of the &lt;p&gt; elements, they are used to mark text as important and emphasized respectively</li>
+            <hr>
+            <h2>What are HTML elements?</h2>
+            <p>HTML elements consist of several parts, including the opening and closing tags, the content, and the attributes. Here is an explanation of each of these parts:</p>
+            <div class="showCode"></div>
+            <p>Here,</p>
+            <li>The opening tag: This consists of the element name, wrapped in angle brackets. It indicates the start of the element and the point at which the element's effects begin.
+            </li>
+            <li>The closing tag: This is the same as the opening tag, but with a forward slash before the element name. It indicates the end of the element and the point at which the element's effects stop.</li>
+            <li>The content: This is the content of the element, which can be text, other elements, or a combination of both.</li>
+            <li>The element: The opening tag, the closing tag, and the content together make up the element.</li>
+            <hr>
+            <h2>What are HTML Attributes?</h2>
+            <p>HTML elements can have attributes, which provide additional information about the element. They are specified in the opening tag of the element and take the form of name-value pairs. Let's see an example:</p>
+            <li>&lt;a href="http://example.com"&gt; Example &lt;/a&gt;</li>
+            <p>The href is an attribute. It provides the link information about the &lt;a&gt; tag. In the above example,</p>
+            <li>href - the name of attribute</li>
+            <li>https://www.programiz.com - the value of attribute</li>
+            <hr>
+            <h2>HTML Syntax</h2>
+            <p>We need to follow a strict syntax guidelines to write valid HTML code. This includes the use of tags, elements, and attributes, as well as the correct use of indentation and white space. Here are some key points about HTML syntax:</p>
+            <p>1. HTML tags consist of the element name, wrapped in angle brackets. For example, &lt;h1&gt;, &lt;p&gt;, &lt;img&gt; are some HTML tags.</p>
+            <p>2. HTML elements are created by enclosing the content of the element inside the opening and closing tags of the element. For example,</p>
+            <li>&lt;span&gt;&gt;Some text.&lt;/span&gt;</li>
+            <p>is an HTML element.</p>
+            <p>3. HTML attributes are used to provide additional information about HTML elements and are specified in the opening tag of the element. For example,</p>
+            <li><a target="www.google.com">Click Here</a> </li>
+            <hr>
+            <a href="Web-Design.html"><div class="nextBtn">
+                <p>Next Tutorials : </p>
+                <p> Web Design -></p>
+
+            </div></a>
+            <hr>
+            <div class="last">
+                © All rights reserved.
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHTML</title>
+
+    <link rel="icon" type="image/x-icon" href="pic/logo1.ico" />
+    <link rel="stylesheet" href="styleHTML.css" />
+  </head>
+  <body>
+    <div class="menuDiv">
+      <div class="menuleft">
+        <a href="index.html"><div class="logo"><img src="pic/Logo.png" alt="pic" /></div></a>
+        
+      </div>
+      <div class="menuright" style="text-decoration: none;">
+        <a href="login.html"><div class="loginBtn">Login</div></a>
+            <a href="signup.html"><div class="signupBtn">Join For Free</div></a>
+      </div>
+    </div>
+    <div class="content">
+        <div class="left1">
+            <div class="heading">Page Index</div>
+            <a href="What-is-html.html"><div class="group "><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">What is HTML?</div></a>
+            <a href="HTML-Basic.html"><div class="group "><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Basic</div></a>
+            <a href="Web-Design.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">Web Design</div></a>
+            <a href="HTML-Paragraphs.html"><div class="group active"><img src="pic/blueCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Paragraphs</div></a>
+            <a href="HTML-Headings.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Headings</div></a>
+            <a href="HTML-Comments.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Comments</div></a>
+            <a href="HTML-Table.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Table</div></a>
+            <a href="HTML-List.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML List</div></a>
+            <a href="HTML-Unordered.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Unordered</div></a>
+            <a href="HTML-Description.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Description</div></a>
+            <a href="HTML-Line.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Line</div></a>
+            <a href="HTML-Pre.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Pre</div></a>
+            <a href="HTML-Horizonal.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Horizonal</div></a>
+        </div>
+        <div class="right1">
+            
+            <h1>HTML Paragraphs</h1>
+            <p>The HTML &lt;p&gt;tag is used to create paragraphs. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p> 
+            <div class="showCode"></div>
+            <p>As we can see, a paragraph starts with the &lt;p&gt; and ends with the &lt;/p&gt; tag.</p>            
+            <hr>
+
+            <p>HTML paragraphs always start on a new line. To demonstrate this, let's create a webpage with two paragraphs.</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+            <p>The above HTML code contains two paragraphs. And each paragraph starts on a new line even though there is sufficient space after the first paragraph.</p>
+            <hr>
+
+            <h2>HTML Paragraphs and Spaces</h2>
+            <p>Paragraphs automatically remove extra spaces and lines from our text. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+            <p>Here, the output</p>
+            <li>remove all the extra spaces between words</li>
+            <li>remove all the extra spaces between words</li>
+            <hr>
+
+            <h2>Adding Line Breaks in Paragraphs</h2>
+            <p>We can use the HTML line break tag, <br>, to add line breaks within our paragraphs. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+            <hr>
+
+            <h2>Pre-formatted Text in HTML</h2>
+            <p>As we have discussed, paragraphs cannot preserve extra lines and space. If we need to create content that uses multiple spaces and lines, we can use the HTML &lt;pre&gt; tag.</p>
+            <p>The &lt;pre&gt; tag creates preformatted text. Preformatted texts are displayed as written in the HTML file. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+
+            <hr>
+
+            <h2>Other Elements Inside Paragraphs</h2>
+            <p>It's possible to include one HTML element inside another. This is also true for &lt;p&gt; tags. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+            <p>In the above example, we have used the &lt;strong&gt; tag inside the &lt;p&gt; tag.</p>
+
+            <hr>
+
+            <h2>Paragraph in Block-Level</h2>
+            <p>The <p> tag is a block-level element. It starts on a new line and takes up the full width (of its parent element).</p>
+            <div class="showCode"></div>
+            <hr>
+            <h2>Add Extra Space Inside Paragraphs</h2>
+            <p>As discussed earlier, we cannot normally add extra empty spaces inside paragraphs. However, we can use a certain HTML entity called non-breaking space to add extra spaces. For example,</p>
+            <div class="showCode"></div>
+            <p>Browser Output</p>
+            <div class="showCode"></div>
+            <p>Here, &nbsp; is an HTML entity, which is interpreted as a space by browsers. This allows us to create multiple spaces inside paragraphs and other HTML tags.</p>
+
+            
+
+
+            <hr>
+            <a href="HTML-Headings.html"><div class="nextBtn">
+                <p>Next Tutorials:</p>
+                <p>HTML-Headings -></p>
+            </div></a>
+
+
+            <hr>
+            <div class="last">
+              © All rights reserved.
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
