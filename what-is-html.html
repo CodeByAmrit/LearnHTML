@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleHTML.css" />
   </head>
   <body>
-    <div class="menuDiv">
+    <div class="menuDiv" id="menu">
       <div class="menuleft">
         <a href="index.html"><div class="logo"><img src="pic/Logo.png" alt="pic" /></div></a>
         <div class="serachDiv">
@@ -29,7 +29,7 @@
     <div class="content">
         <div class="left1">
             <div class="heading">Page Index</div>
-            <a href="What-is-html.html"><div class="group active"><img src="pic/blueCheck.png" alt="tick" height="18px" style="margin-right: 10px;">What is HTML?</div></a>
+            <a href="What-is-html.html"><div class="group active" id="symbol"><img src="pic/blueCheck.png" alt="tick" height="18px" style="margin-right: 10px;">What is HTML?</div></a>
             <a href="HTML-Basic.html"><div class="group "><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Basic</div></a>
             <a href="Web-Design.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">Web Design</div></a>
             <a href="HTML-Paragraphs.html"><div class="group"><img src="pic/darkCheck.png" alt="tick" height="18px" style="margin-right: 10px;">HTML Paragraphs</div></a>
@@ -120,5 +120,19 @@
             </div>
         </div>
     </div>
+    <script>
+    // Check if the user has visited the page before using localStorage
+    if (localStorage.getItem("visited") === null) {
+        // If the user hasn't visited before, set a flag in localStorage
+        localStorage.setItem("visited", "true");
+        document.getElementById("symbol").classList.add("active");
+        
+    } else {
+        // If the user has visited before, change the logo color
+        const logo = document.getElementById("menu");
+        //logo.style.backgroundColor = "red"; // Change the color (in this case, a hue rotation)
+    }
+</script>
+
   </body>
 </html>
