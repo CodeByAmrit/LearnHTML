@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - LearnHTML</title>
+    <link rel="icon" type="image/x-icon" href="pic/logo1.ico" />
+
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #left-div {
+        flex: 1;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      #right-div {
+        flex: 1;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+     
+      #login-form {
+        width: 400px;
+        text-align: center;
+        padding: 20px;
+
+        border-radius: 5px;
+        background: #ffffff;
+      }
+
+      #login-form h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      #login-form input {
+        padding-left: 50px;
+        width: 304px;
+        height: 52px;
+        border: none;
+        background-color: #f0edff;
+        margin-top: 16px;
+        border-radius: 16px;
+      }
+
+      #login-buttons {
+        margin-top: 16px;
+      }
+
+      #login-buttons a {
+        text-decoration: none;
+        padding: 20px;
+        margin: 5px;
+      }
+
+      #loginBtn {
+        color: white;
+        cursor: pointer;
+        width: 142px;
+        height: 52px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(99.78deg, #9181f4 -5.85%, #5038ed 109.55%);
+        margin-top: 16px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="right-div">
+      <div id="login-form">
+        <img src="pic/Logo.svg" alt="HTML" id="logo" width="300px" /><br /><br />
+        <h2><strong>Create Account</strong></h2>
+        <form action="#" method="post">
+          <input type="text" placeholder="E-Mail " required />
+
+          <input type="password" placeholder="Password" required />
+          <button type="submit" id="loginBtn"><strong>Create Account</strong></button>
+          <br />
+          <br />
+          <hr />
+          or
+          <div id="login-buttons">
+            <a href="#"><img src="pic/google.svg" alt="google" /></a>
+            <a href="#"><img src="pic/github-logo.png" alt="google" /></a>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+    <div id="left-div">
+      <img src="pic/loginLeft.png" alt="" />
+    </div>
+  </body>
+</html>

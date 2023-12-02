@@ -1,10 +1,12 @@
+*{
+  scroll-behavior: smooth;
+}
 a{
   text-decoration: none;
 }
 body {
   overflow: auto;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 body {
   font-family: Calibri;
