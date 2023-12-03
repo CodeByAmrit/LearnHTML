@@ -14,24 +14,9 @@
     
   </head>
   <body>
-    <div class="menuDiv" id="menu">
-      <div class="menuleft">
-        <a href="/"><div class="logo"><img src="pic/Logo.png" alt="pic" /></div></a>
-        <div class="serachDiv">
-          <div class="searchIcon">
-            <img src="pic/search.png" alt="serach" width="16px" height="16px">
-          </div>
-          <div class="serachInput">
-            <input type="text" id="searchInput" oninput="search()"   placeholder="Search tutorials & examples">
-          </div>
-          <div id="searchResult" style="display:none;"></div>
-        </div>
-      </div>
-      <div class="menuright" style="text-decoration: none;">
-        <a href="login"><div class="loginBtn">Login</div></a>
-            <a href="signup"><div class="signupBtn">Join For Free</div></a>
-      </div>
-    </div>
+    <!-- Load Menu from component -->
+    <?php require_once 'resources/component/menu.php'; ?>
+    
     <div class="content">
         <div class="left1" id="parentDiv">
             <div class="heading">Page Index</div>

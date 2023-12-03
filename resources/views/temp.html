@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        #searchResult {
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="searchInput" oninput="search()" placeholder="Search...">
+    
+    <div id="content">
+        <div>Apple</div>
+        <div>Banana</div>
+        <div>Cherry</div>
+        <div>Orange</div>
+        <div>Strawberry</div>
+    </div>
+
+    <div id="searchResult"></div>
+
+    <script>
+        function search() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var contentDiv = document.getElementById('content');
+            var divs = contentDiv.getElementsByTagName('div');
+
+            // Remove the 'highlight' class from all div elements
+            removeHighlightFromAll(divs);
+
+            var matchingElement = null;
+
+            for (var i = 0; i < divs.length; i++) {
+                var text = divs[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    matchingElement = divs[i];
+                    break; // Stop searching once a match is found
+                }
+            }
+
+            displayResults(matchingElement);
+        }
+
+        function displayResults(matchingElement) {
+            var searchResultDiv = document.getElementById('searchResult');
+            searchResultDiv.innerHTML = '';
+
+            if (matchingElement) {
+                // Highlight the matching element
+                matchingElement.classList.add('highlight');
+
+                // Display the matching element in the searchResult div
+                searchResultDiv.innerText = 'Matching Element: ' + matchingElement.innerText;
+            } else {
+                searchResultDiv.innerText = 'No results found.';
+            }
+        }
+
+        function removeHighlightFromAll(elements) {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove('highlight');
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -85,6 +85,14 @@
         margin-top: 16px;
         font-size: 14px;
       }
+      @media (max-width: 800px)  {
+        #left-div{
+          display: none;
+        }
+        #right-div{
+          padding-top: 60px;
+        }
+      }
     </style>
   </head>
   <body>
