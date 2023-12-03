@@ -101,10 +101,11 @@
       <div id="login-form">
         <img src="pic/Logo.svg" alt="HTML" id="logo" width="300px" /><br /><br />
         <h2><strong>Create Account</strong></h2>
-        <form action="#" method="post">
-          <input type="text" placeholder="E-Mail " required />
 
-          <input type="password" placeholder="Password" required />
+        <form action="/create" method="POST">
+          <input type="text" name="email" placeholder="E-Mail " required />
+
+          <input type="password" name="password" placeholder="Password" required />
           <button type="submit" id="loginBtn"><strong>Create Account</strong></button>
           <br />
           <br />

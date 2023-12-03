@@ -6,6 +6,15 @@
         case '':
             require __DIR__ . '/resources/views/landing.php';
             break;
+        case '/create':
+            require __DIR__ . '/databases/create.php';
+            break;
+        case '/checkLogin':
+            require __DIR__ . '/databases/checkLogin.php';
+            break;
+        case '/updatePhoto':
+            require __DIR__ . '/databases/updatePhoto.php';
+            break;
         case '/':
             require __DIR__ . '/resources/views/landing.php';
             break;

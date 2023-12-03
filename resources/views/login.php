@@ -1,3 +1,10 @@
+<?php
+  session_start();
+
+  if (isset($_SESSION["userId"])) {
+      header("Location: /Learning");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -174,10 +181,10 @@
       <div id="login-form">
         <img src="pic/Logo.svg" alt="HTML" id="logo" width="300px" /><br /><br />
         <h2 style="padding:0;"><strong>LOGIN</strong></h2>
-        <form action="#" method="post">
-          <input type="text" placeholder="Username" required />
+        <form action="/databases/checkLogin.php" method="POST">
+          <input type="text" name="email" placeholder="Username" required />
 
-          <input type="password" placeholder="Password" required />
+          <input type="password" name="password" placeholder="Password" required />
           <button type="submit" id="loginBtn"><strong>Login</strong></button>
           <br />
           <br />

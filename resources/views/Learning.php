@@ -1,4 +1,6 @@
+<?php
 
+?>
 
 
 <!DOCTYPE html>
@@ -10,12 +12,12 @@
 
     <link rel="icon" type="image/x-icon" href="/pic/logo1.ico" />
     <link rel="stylesheet" href="/resources/css/styleHTML.css" />
-
+    <script src="/resources/js/learning.js"></script>
     
   </head>
   <body>
     <!-- Load Menu from component -->
-    <?php require_once 'resources/component/menu.php'; ?>
+    <?php require 'resources/component/menu.php'; ?>
     
     <div class="content">
         <div class="left1" id="parentDiv">
@@ -38,9 +40,11 @@
             <?php require 'resources/views/what-is-html.php' ?>
         </div>
     </div>
+    <div>
 
-
-    <script src="/resources/js/learning.js"></script>
+      <?php require 'resources/component/userPhotoUpload.php' ?>
+    </div>
+    
 
   </body>
 </html>
