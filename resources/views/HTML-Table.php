@@ -359,7 +359,7 @@
 
 
             <hr>    
-            <a href="HTML-List.html"><div class="nextBtn">
+            <a href="HTML-List "><div class="nextBtn">
                 <p>Next Tutorials:</p>
                 <p>HTML List -></p>
             </div></a>

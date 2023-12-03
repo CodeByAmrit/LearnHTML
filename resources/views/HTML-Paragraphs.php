@@ -125,7 +125,7 @@ We can use other tags like &lt;strong&gt;the strong tag to emphasize text&lt;/st
 
 
 <hr>
-<a href="HTML-Headings.html"><div class="nextBtn">
+<a href="HTML-Headings "><div class="nextBtn">
     <p>Next Tutorials:</p>
     <p>HTML-Headings -></p>
 </div></a>

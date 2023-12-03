@@ -160,7 +160,7 @@
 
 
             <hr>
-            <a href="HTML-Paragraphs.html"><div class="nextBtn">
+            <a href="HTML-Paragraphs "><div class="nextBtn">
                 <p>Next Tutorials:</p>
                 <p>HTML-Paragraphs -></p>
             </div></a>

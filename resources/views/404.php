@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="text-align:center;">404 Error</h1>
+    <h1 style="text-align:center;">not fojnd Error</h1>
 </body>
 </html>

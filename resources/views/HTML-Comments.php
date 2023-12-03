@@ -87,7 +87,7 @@
 </p>
 
 <hr />
-<a href="HTML-Table.html"
+<a href="HTML-Table "
   ><div class="nextBtn">
     <p>Next Tutorials:</p>
     <p>HTML Table -></p>

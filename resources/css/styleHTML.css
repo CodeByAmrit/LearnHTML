@@ -269,7 +269,7 @@ body {
 
 
 .showCode{
-  width: 660px;
+  width: 600px;
   min-height: 50px;
   height: fit-content;
   padding: 20px;
@@ -315,19 +315,31 @@ code {
   background-color: #0c0e14;
 }
 
+#searchResult{
+  width: 200px;
+  background-color: rgb(239, 239, 239);
+  height: fit-content;
+  border-radius: 8px;
+  padding: 15px;
+}
+.highlight {
+  background-color: #8db4fc;
+}
+
 @media only screen and (max-width: 800px) {
+  
   .left1{
     display: none;
   }
   .right1{
     margin-left: 40px;
-    width: 100vw;
+    width: 80vw;
   }
   .serachDiv{
     display: none;
   }
   .showCode{
-    width:80vw;
+    width:70vw;
   }
   .menuDiv{
     margin: 0;

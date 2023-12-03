@@ -65,7 +65,7 @@
 </div>
 
 <hr />
-<a href="HTML-Comments.html"
+<a href="HTML-Comments "
   ><div class="nextBtn">
     <p>Next Tutorials:</p>
     <p>HTML Comments -></p>

@@ -45,7 +45,7 @@
   <p>You will need a text editor and a web browser to create and run an HTML file on your computer. You can follow the following steps to create and run an HTML file on your device.</p>
   <p>1. Open a text editor. There are many text editors available, such as Notepad (on Windows) or TextEdit (on macOS).</p>
   <p>You can now start writing HTML code in your text editor. Here's a sample code you can type:</p>
-  <p>Save the file as index.html (or any other name with the .html extension) in your desired location.</p>
+  <p>Save the file as index  (or any other name with the   extension) in your desired location.</p>
   <p>Open the HTML file in a web browser. You can do this by double-clicking the HTML file in the location where you saved it, or right click on your HTML file and choosing open.</p>
   <p>The HTML file will be displayed in the web browser, and you can view the content of the file.
   </p>
@@ -64,10 +64,10 @@
   <li>may not be powerful enough to handle some of the more complex features found in modern web pages</li>
   <li>can be challenging to maintain and update over time</li>
   <hr>
-  <a href="HTML-Basic.html"><div class="nextBtn">
+  <div class="nextBtn" onclick="load('resources/views/HTML-Basic.php')">
       <p>Next Tutorials:</p>
       <p>HTML Basics -></p>
-  </div></a>
+  </div>
 
   <hr>
   <div class="last">

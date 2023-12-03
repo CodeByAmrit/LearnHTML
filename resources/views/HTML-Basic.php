@@ -93,11 +93,11 @@
             </div>
             <br><br>
             <hr>
-            <a href="Web-Design.html"><div class="nextBtn">
+            <div class="nextBtn" onclick="load('resources/views/Web-Design.php'), null">
                 <p>Next Tutorials : </p>
                 <p> Web Design -></p>
 
-            </div></a>
+            </div>
             <hr>
             <div class="last">
                 © All rights reserved.
