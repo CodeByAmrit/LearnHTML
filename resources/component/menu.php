@@ -8,7 +8,7 @@
 
 <div class="menuDiv">
     <div class="menuleft">
-        <a href="">
+        <a href="/">
             <div class="logo"><img src="/pic/Logo.svg" alt="pic" /></div>
         </a>
         <div class="menuItems" onclick="popFunction()">
